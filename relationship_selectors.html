@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>relationship selectors - css</title>
+	<style >
+		/*example for direct childrens*/
+		ol>li{
+border:1px solid red;
+margin-bottom:10px;
+		}
+.container> .vue{
+	border:1px solid red ;
+}
+
+
+
+		/*below example is for indirect childrens also called as "decedant selectors"*/
+		ol li{
+			color:gold;
+		}
+
+section div{
+	color:red;
+}
+
+	</style>
+</head>
+<body>
+<ol>
+	<li>html</li>
+	<ul>
+		<li>html 1.0</li>
+		<li>html 2.0</li>
+		<li>html 3.0</li>
+		<li>html 4.0</li>
+		<li>dhtml</li>
+		<li>xhtml </li>
+		<li>html 5.0</li>
+		
+	</ul>
+	<li>css</li>
+	<ol>
+		<li>css 1.0</li>
+		<li>css 2.0</li>
+		<li>css 3.0</li>
+	</ol>
+	<li>js</li>
+	
+</ol>
+<section class ="container">
+	<div class ="react">reactjs</div>
+	<div class ="ng">angular</div>
+	<div class ="vue">vuejsc</div>
+</section>
+</body>
+</html>

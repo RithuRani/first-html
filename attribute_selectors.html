@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>attributes selectors - css</title>
+	<style>
+/* has attribute -[attrname]*/
+[href]{
+color:gold;
+
+}
+[controls]{
+border:1px solid red;
+}
+/* attr value equals to-[attrname"attrvalue"]*/
+
+[target = "_blank"]{
+	border:1px solid red;
+	padding:20px;
+}
+/* attr value starts with- [attrname^="attrvalue"]*/
+[name^='user']{
+	border:1px solid red;
+}
+/*attr value ends with [attrname $ ="attrvalue"]*/
+[href $ = 'com/']
+{
+	font-size:20px;
+}
+/* attr value contains -[attrname *="attrvalue"]*/
+[alt *='chi']
+{
+	width:100%;
+}
+	</style>
+
+
+
+
+
+</head>
+<body>
+<img src="https://www.achieversit.com/assets/images/aws_training.jpg" alt="aws-development"alt="achievers it">
+<a href="https://www.achieversit.com/" target="_blank"> achievers it</a>
+<input type="text" name="username">
+<audio controls autoplay>
+	<source src="..//..//multimedia/sample.mp3" type="audio/mp3">
+</audio>
+<video controls autoplay="true">
+	<source src="..//..//multimedia/sample.mp4" type="video/mp4">
+</video>
+<img src="https://www.achieversit.com/assets/images/aws_training.jpg" alt="aws-development"alt="AIT">
+
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>layout properties - css</title>
+	<style >
+	section.floatcontainer{
+		border:1px solid red;
+		float: left;
+		width: 100px;
+		padding: 20px;
+		box-sizing: border-box;
+	}
+section.floatcontainer div{
+float:left;
+width: 24.5%;
+padding: 20px;
+box-sizing: border-box;
+border: 1px solid red;
+margin: 2px;
+}
+section div:nth-child(2){
+	width:50%;
+	}
+/*flex styles*/
+.flexcontainer{
+border: 1px solid red;
+display:flex;
+flex-direction:column-reverse;
+padding: 20px;
+
+}
+.flexcontainer div{
+flex:1;
+border: 1px solid red;
+padding: 20px;
+margin: 20px;
+	}
+	.flexcontainer div:nth-child(2){
+		flex:2;
+	}
+	</style>
+
+</head>
+<body>
+/*example for float property*/
+<h1>3 column layout using float</h1>
+<section class="floatcontainer">
+	<div>1</div>
+	<div>2</div>
+	<div>3</div>
+	<div>4</div>
+</section>
+/*example for float property*/
+<h1>3 column layout using display:flex;</h1>
+<section class="flexcontainer">
+	<div>1</div>
+	<div>2</div>
+	<div>3</div>
+	<div>4</div>
+	<div>5</div>
+</section>
+</body>
+</html>
